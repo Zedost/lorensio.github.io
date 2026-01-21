@@ -55,7 +55,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 cursor-pointer" onclick="switchPage('home')">
                     <span class="text-2xl font-extrabold tracking-tighter text-white">
-                        Lorensio Dearil Aldo<span class="text-primary">.TKJ</span>
+                        <span class="text-primary">Lorensio</span> Dearil Aldo
                     </span>
                 </div>
                 
@@ -63,7 +63,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <button onclick="switchPage('home')" id="nav-home" class="nav-btn text-white font-bold border-b-2 border-primary transition-all px-1 py-1">Beranda</button>
-                        <button onclick="switchPage('about')" id="nav-about" class="nav-btn text-slate-400 hover:text-white transition-all px-1 py-1">Tentang (CV)</button>
+                        <button onclick="switchPage('about')" id="nav-about" class="nav-btn text-slate-400 hover:text-white transition-all px-1 py-1">Tentang</button>
                         <button onclick="switchPage('contact')" id="nav-contact" class="nav-btn text-slate-400 hover:text-white transition-all px-1 py-1">Kontak</button>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                             <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-white mb-2">Mikrotik Hotspot</h3>
-                                <p class="text-slate-400 text-sm mb-4">Implementasi Login Page voucher dan limitasi bandwidth user untuk Cafe.</p>
+                                <p class="text-slate-400 text-sm mb-4">Implementasi Login Page voucher dan limitasi bandwidth user untuk Pelanggan.</p>
                                 <span class="text-primary text-sm font-semibold">Lihat Detail &rarr;</span>
                             </div>
                         </div>
@@ -193,7 +193,27 @@
         <div id="page-about" class="page-section fade-in hidden">
             <section class="py-20 max-w-4xl mx-auto px-4">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Curriculum Vitae</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Curriculum Vitae</h2>
+                    <div class="bg-card/50 p-8 rounded-2xl border border-slate-700 mb-12">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-user-tie text-primary"></i> Profil
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed mb-2">
+                        <span class="text-white font-semibold">Halo !!!</span>
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        Saya adalah siswa kelas XII Teknik Komputer dan Jaringan di <span class="text-white font-semibold">SMK Negeri 2 Magetan</span> dengan antusiasme tinggi terhadap infrastruktur jaringan dan teknologi server. Memiliki pengalaman praktis selama 6 bulan sebagai Teknisi di <span class="text-white font-semibold">PT Global Infra Teknologi Surabaya</span>, di mana saya mengasah kemampuan dalam instalasi fiber optik dan manajemen jaringan skala industri.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Saat ini, saya sedang mendalami administrasi jaringan menggunakan perangkat MikroTik (MTCNA) dan Cisco, serta aktif mengeksplorasi pengembangan web modern. Saya dikenal sebagai pribadi yang tekun belajar mandiri—terutama dalam memecahkan masalah teknis (troubleshooting)—dan memiliki visi untuk melanjutkan studi ke jenjang pendidikan tinggi di bidang Teknik Informatika.
+                    </p>
+                    
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20 italic">#FutureITS2026</span>
+                        <span class="px-3 py-1 bg-secondary/10 text-secondary text-xs rounded-full border border-secondary/20 italic">#NetworkEngineer</span>
+                        <span class="px-3 py-1 bg-orange-500/10 text-orange-500 text-xs rounded-full border border-orange-500/20 italic">#CertifiedMTCNA</span>
+                    </div>
+                </div>
                     <p class="text-slate-400">Riwayat pendidikan dan perjalanan karir saya.</p>
                 </div>
 
@@ -219,6 +239,7 @@
                         </div>
                     </div>
 
+                    <!-- (MTCNA) -->
                     <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mt-8">
                         <div class="flex items-center justify-center w-10 h-10 rounded-full border border-orange-500 bg-slate-900 group-[.is-active]:bg-orange-500 text-slate-500 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                             <i class="fas fa-certificate"></i>
@@ -293,15 +314,16 @@
                                 </div>
                             </div>
                             <!-- Whatsapp -->
-                            <div class="flex items-center gap-4 p-4 bg-card rounded-xl border border-slate-700 hover:border-green-500 transition-colors">
-                                <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center text-green-500 text-xl">
+                            <a href="https://wa.me/6282111758200?text=Halo%20Lorensio,%20saya%20tertarik%20dengan%20keahlian%20Anda." target="_blank" class="flex items-center gap-4 p-4 bg-card rounded-xl border border-slate-700 hover:border-green-500 hover:bg-green-500/5 transition-all group">
+                                <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center text-green-500 text-xl group-hover:scale-110 transition-transform">
                                     <i class="fab fa-whatsapp"></i>
                                 </div>
                                 <div>
                                     <h4 class="text-white font-bold">WhatsApp</h4>
                                     <p class="text-slate-400">+62 821 1175 8200</p>
+                                    <span class="text-[10px] text-green-500 font-semibold uppercase tracking-wider">Klik untuk Chat &rarr;</span>
                                 </div>
-                            </div>
+                            </a>
                             <!-- Lokasi -->
                             <div class="flex items-center gap-4 p-4 bg-card rounded-xl border border-slate-700 hover:border-red-500 transition-colors">
                                 <div class="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center text-red-500 text-xl">
