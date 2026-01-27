@@ -33,10 +33,10 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#0ea5e9',   /* Sky Blue 500 */
-                        secondary: '#6366f1', /* Indigo 500 */
-                        dark: '#0f172a',      /* Slate 900 */
-                        card: '#1e293b',      /* Slate 800 */
+                        primary: '#0ea5e9',   
+                        secondary: '#6366f1', 
+                        dark: '#0f172a',      
+                        card: '#1e293b',      
                     }
                 }
             }
@@ -48,14 +48,13 @@
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255,255,255, 0.05);
         }
-        /* Animasi yang lebih halus */
         .fade-in {
             animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
         @keyframes fadeIn {
             from { 
                 opacity: 0; 
-                transform: translateY(20px); /* Efek muncul dari bawah sedikit lebih jauh */
+                transform: translateY(20px);
             }
             to { 
                 opacity: 1; 
@@ -489,17 +488,17 @@
         // 1. Sembunyikan semua halaman
         document.querySelectorAll('.page-section').forEach(page => {
             page.classList.add('hidden');
-            page.classList.remove('block', 'fade-in'); // Hapus fade-in agar bisa dipasang ulang
+            page.classList.remove('block', 'fade-in');
         });
 
         // 2. Tampilkan halaman yang dipilih
         const targetPage = document.getElementById('page-' + pageId);
         if (targetPage) {
             targetPage.classList.remove('hidden');
-            targetPage.classList.add('block', 'fade-in'); // Pasang kembali fade-in untuk animasi
+            targetPage.classList.add('block', 'fade-in');
         }
 
-        // 3. Update status tombol navigasi (Kode yang sudah ada tetap di sini...)
+        // 3. Update status tombol navigasi
         document.querySelectorAll('.nav-btn').forEach(btn => {
             btn.classList.remove('text-white', 'border-b-2', 'border-primary');
             btn.classList.add('text-slate-400');
@@ -514,7 +513,6 @@
         document.getElementById('mobile-menu').classList.add('hidden');
 
         // 5. SMOOTH SCROLL KE ATAS
-        // Ini akan membuat layar meluncur halus ke atas setiap kali ganti halaman
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
