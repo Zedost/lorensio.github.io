@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Lorensio Dearil Aldo | Network Engineer</title>
-    
+    <meta name="description" content="Portofolio Lorensio Dearil Aldo - Siswa TKJ SMK Negeri 2 Magetan, Network Engineer, dan Web Developer.">
+    <meta name="keywords" content="Lorensio Dearil Aldo, TKJ, SMK Negeri 2 Magetan, Network Engineer, MTCNA, Portofolio">
+    <meta name="author" content="Lorensio Dearil Aldo">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zedost.github.io/lorensio.portofolio"> <meta property="og:title" content="Lorensio Dearil Aldo | Network Engineer & Developer">
+    <meta property="og:description" content="Siswa TKJ dengan keahlian Networking, Mikrotik, dan Web Development.">
+    <meta property="og:image" content="assets/img/foto-profil.webp">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Lorensio Dearil Aldo | Network Engineer & Developer">
+    <meta property="twitter:description" content="Siswa TKJ dengan keahlian Networking, Mikrotik, dan Web Development.">
+    <meta property="twitter:image" content="assets/img/foto-profil.webp">
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
@@ -36,13 +48,19 @@
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255,255,255, 0.05);
         }
-        /* Animasi Fade In untuk perpindahan halaman */
+        /* Animasi yang lebih halus */
         .fade-in {
-            animation: fadeIn 0.5s ease-in-out;
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); /* Efek muncul dari bawah sedikit lebih jauh */
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
         }
     </style>
 </head>
@@ -123,21 +141,21 @@
             <section class="py-16 bg-slate-900/50">
                 <div class="max-w-7xl mx-auto px-4">
                     <h2 class="text-3xl font-bold text-white text-center mb-10">Keahlian Utama</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex flex-wrap justify-center gap-6">
                         <!-- Skill 1 -->
-                        <div class="p-6 bg-card rounded-xl border border-slate-700 hover:border-primary transition-all group">
+                        <div class="p-6 bg-card rounded-xl border border-slate-700 hover:border-primary transition-all group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                             <i class="fas fa-network-wired text-4xl text-primary mb-4 group-hover:scale-110 transition-transform block"></i>
                             <h3 class="font-bold text-white text-lg">Networking</h3>
                             <p class="text-slate-400 text-sm mt-2">Routing & Switching, Subnetting.</p>
                         </div>
-                        <!-- Skill 3 -->
-                        <div class="p-6 bg-card rounded-xl border border-slate-700 hover:border-primary transition-all group">
+                        <!-- Skill 2 -->
+                        <div class="p-6 bg-card rounded-xl border border-slate-700 hover:border-primary transition-all group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                             <i class="fas fa-wifi text-4xl text-green-500 mb-4 group-hover:scale-110 transition-transform block"></i>
                             <h3 class="font-bold text-white text-lg">Mikrotik</h3>
                             <p class="text-slate-400 text-sm mt-2">MTCNA Level, Hotspot, Bandwidth Management.</p>
                         </div>
                         <!-- Skill 4 -->
-                        <div class="p-6 bg-card rounded-xl border border-slate-700 hover:border-primary transition-all group">
+                        <div class="p-6 bg-card rounded-xl border border-slate-700 hover:border-primary transition-all group w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                             <i class="fas fa-code text-4xl text-orange-500 mb-4 group-hover:scale-110 transition-transform block"></i>
                             <h3 class="font-bold text-white text-lg">Web Dev</h3>
                             <p class="text-slate-400 text-sm mt-2">HTML5, CSS3, Tailwind, Basic JavaScript.</p>
@@ -189,6 +207,7 @@
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Curriculum Vitae</h2>
                     <div class="bg-card/50 p-8 rounded-2xl border border-slate-700 mb-12">
+                    <!--Profil-->    
                     <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
                         <i class="fas fa-user-tie text-primary"></i> Profil
                     </h3>
@@ -210,7 +229,75 @@
                 </div>
                     <p class="text-slate-400">Riwayat pendidikan dan perjalanan karir saya.</p>
                 </div>
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fas fa-briefcase text-secondary"></i> Pengalaman Praktik Kerja Lapangan (PKL)
+                    </h3>
 
+                    <div class="bg-card border border-slate-700 rounded-2xl overflow-hidden shadow-xl">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-center">
+                                <div class="mb-4">
+                                    <h4 class="text-xl font-bold text-white">PT Global Infra Teknologi, Surabaya</h4>
+                                    <p class="text-primary font-semibold mt-1">Posisi: Teknisi Jaringan & Infrastruktur (6 Bulan)</p>
+                                </div>
+                                <p class="text-slate-400 mb-6 leading-relaxed">
+                                    Terjun langsung dalam operasional harian ISP, mulai dari instalasi di sisi pelanggan (CPE) hingga maintenance di sisi core network.
+                                </p>
+                                
+                                <h5 class="text-white font-bold mb-3 text-sm uppercase tracking-wider">Kompetensi yang Diasah:</h5>
+                                <ul class="space-y-3 text-slate-300">
+                                    <li class="flex items-start gap-3">
+                                        <div class="mt-1 bg-green-500/20 p-1 rounded-full">
+                                            <i class="fas fa-check text-green-500 text-xs"></i>
+                                        </div>
+                                        <span>Fiber Optic Splicing & Terminasi (FTTH Standard).</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="mt-1 bg-green-500/20 p-1 rounded-full">
+                                            <i class="fas fa-check text-green-500 text-xs"></i>
+                                        </div>
+                                        <span>Manajemen Rack Server & Cabling (Structured Cabling).</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="mt-1 bg-green-500/20 p-1 rounded-full">
+                                            <i class="fas fa-check text-green-500 text-xs"></i>
+                                        </div>
+                                        <span>Troubleshooting koneksi client di lapangan (On-site support).</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="md:w-1/2 bg-slate-800/50 p-4 grid grid-cols-2 gap-3 content-center">
+                                <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 group relative hover:border-primary transition-all">
+                                    <img src="https://via.placeholder.com/400x400/1e293b/0ea5e9?text=Splicing+FO" alt="Kegiatan Splicing Fiber Optic" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                                        <p class="text-white text-xs font-medium">Proses Manajemen FO menggunakan OTDR</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 group relative hover:border-primary transition-all">
+                                    <img src="https://via.placeholder.com/400x400/1e293b/6366f1?text=Rack+Server" alt="Manajemen Rack Server" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                                        <p class="text-white text-xs font-medium">Proses Manajemen Rack Server</p>
+                                    </div>
+                                </div>
+
+                                <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 group relative hover:border-primary transition-all">
+                                    <img src="https://via.placeholder.com/400x400/1e293b/22c55e?text=Tim+Lapangan" alt="Foto Tim Lapangan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                                        <p class="text-white text-xs font-medium">Penanaman Tiang di Area Baru</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="aspect-square rounded-xl bg-slate-900 border border-slate-700 flex flex-col items-center justify-center p-4 text-center">
+                                    <i class="fas fa-camera-retro text-3xl text-slate-500 mb-2"></i>
+                                    <p class="text-slate-400 text-xs">Dokumentasi kegiatan selama 6 bulan magang industri.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- CV Container -->
                 <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
                     
@@ -227,6 +314,7 @@
                             <div class="text-slate-400 text-sm mb-2">Jurusan Teknik Komputer & Jaringan</div>
                             <ul class="list-disc list-inside text-slate-500 text-sm space-y-1">
                                 <li>Praktek Kerja Lapangan di PT. Global Infra Teknologi (6 Bulan).</li>
+                                <li>Proyek Akhir: Rancang Bangun Jaringan Fiber To The Home (FTTH).</li>
                             </ul>
                         </div>
                     </div>
@@ -365,39 +453,65 @@
     <!-- JAVASCRIPT UNTUK PINDAH HALAMAN -->
     <script>
         function switchPage(pageId) {
-            // 1. Sembunyikan semua halaman
-            document.querySelectorAll('.page-section').forEach(page => {
-                page.classList.add('hidden');
-                page.classList.remove('block');
-            });
+        // 1. Sembunyikan semua halaman
+        document.querySelectorAll('.page-section').forEach(page => {
+            page.classList.add('hidden');
+            page.classList.remove('block', 'fade-in'); // Hapus fade-in agar bisa dipasang ulang
+        });
 
-            // 2. Tampilkan halaman yang dipilih
-            const targetPage = document.getElementById('page-' + pageId);
-            if (targetPage) {
-                targetPage.classList.remove('hidden');
-                targetPage.classList.add('block');
-            }
-
-            // 3. Update status tombol navigasi
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                // Reset style semua tombol jadi abu-abu
-                btn.classList.remove('text-white', 'border-b-2', 'border-primary');
-                btn.classList.add('text-slate-400');
-            });
-
-            // Highlight tombol yang aktif
-            const activeBtn = document.getElementById('nav-' + pageId);
-            if (activeBtn) {
-                activeBtn.classList.remove('text-slate-400');
-                activeBtn.classList.add('text-white', 'border-b-2', 'border-primary');
-            }
-
-            // 4. Tutup menu mobile jika terbuka
-            document.getElementById('mobile-menu').classList.add('hidden');
-
-            // 5. Scroll ke atas
-            window.scrollTo(0, 0);
+        // 2. Tampilkan halaman yang dipilih
+        const targetPage = document.getElementById('page-' + pageId);
+        if (targetPage) {
+            targetPage.classList.remove('hidden');
+            targetPage.classList.add('block', 'fade-in'); // Pasang kembali fade-in untuk animasi
         }
+
+        // 3. Update status tombol navigasi (Kode yang sudah ada tetap di sini...)
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.classList.remove('text-white', 'border-b-2', 'border-primary');
+            btn.classList.add('text-slate-400');
+        });
+        const activeBtn = document.getElementById('nav-' + pageId);
+        if (activeBtn) {
+            activeBtn.classList.remove('text-slate-400');
+            activeBtn.classList.add('text-white', 'border-b-2', 'border-primary');
+        }
+
+        // 4. Tutup menu mobile jika terbuka
+        document.getElementById('mobile-menu').classList.add('hidden');
+
+        // 5. SMOOTH SCROLL KE ATAS
+        // Ini akan membuat layar meluncur halus ke atas setiap kali ganti halaman
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        const backToTopBtn = document.getElementById('backToTop');
+
+        // Fungsi untuk mendeteksi scroll
+        window.addEventListener('scroll', () => {
+            // Jika user scroll ke bawah lebih dari 400px, munculkan tombol
+            if (window.pageYOffset > 400) {
+                backToTopBtn.classList.remove('translate-y-24', 'opacity-0');
+                backToTopBtn.classList.add('translate-y-0', 'opacity-100');
+            } else {
+                // Jika di atas, sembunyikan kembali
+                backToTopBtn.classList.add('translate-y-24', 'opacity-0');
+                backToTopBtn.classList.remove('translate-y-0', 'opacity-100');
+            }
+        });
+
+        // Fungsi saat tombol diklik
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
     </script>
+    <button id="backToTop" class="fixed bottom-8 right-8 z-[60] p-4 rounded-full bg-primary text-white shadow-2xl transition-all duration-500 translate-y-24 opacity-0 hover:bg-sky-600 focus:outline-none group">
+        <i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform"></i>
+    </button>
 </body>
 </html>
